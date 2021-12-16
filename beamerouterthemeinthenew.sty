@@ -1,0 +1,63 @@
+%% Titlepage
+\setbeamertemplate{title page}{
+  \usebeamerfont{title}
+  \centering
+  \inserttitle \\
+  \vspace*{5mm}
+  {\usebeamercolor*[fg]{minor}\insertauthor} \\
+  \vspace*{3mm}
+  {\usebeamercolor*[fg]{minor}\insertdate} \\
+}
+\setbeamerfont{title}{
+  size*={18}{1}
+}
+
+\setbeamercolor{minor} {
+  fg=gray
+}
+
+
+%% footer
+\setbeamertemplate{footline}{%
+  \hrule
+  \vspace*{1mm}
+  \hspace*{3mm}
+  \insertsubtitle, \insertdate
+  \hfill
+  \insertframenumber$\ /\ $\insertmainframenumber
+  \hspace*{3mm}
+  \vspace*{1mm}
+}
+\setbeamerfont{footline}{
+  size*={5}{0.2},
+  shape=\itshape
+}
+\setbeamercolor{footline}{
+  fg=gray
+}
+
+%% Itemize
+\setbeamertemplate{itemize item}{$\rightarrow$}
+
+
+%% Frame
+
+\setbeamercolor{frametitle} {
+  fg=black
+}
+
+
+\setbeamertemplate{frametitle}{
+  \vspace*{2mm}
+  \parindent=\insertframetitle \\
+  \vspace*{1mm}
+  \usebeamercolor[fg]{framesubtitle}
+  \footnotesize\insertframesubtitle
+}
+
+
+ \setbeamersize
+ {
+     text margin left=0.5cm,
+     text margin right=0.7cm
+ }

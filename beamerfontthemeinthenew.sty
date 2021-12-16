@@ -1,0 +1,77 @@
+% by Theresa Diefenbac
+
+\ProvidesPackage{beamerfontthemeinthenew}
+
+\RequirePackage{fontspec}
+
+\setmainfont[
+Extension=.ttf,
+UprightFont=*-Regular,
+%BoldFont=*-Bold,
+%ItalicFont=*-MI,
+%Mapping=tex-text
+]{Montserrat}
+
+\setsansfont[
+ Extension=.ttf,
+ UprightFont=*-Regular,
+% BoldFont=*-Bold,
+% ItalicFont=*-RI,
+% BoldItalicFont=*-BI,
+% Mapping=tex-text
+]{Montserrat}
+% \setmonofont[
+% Extension=.ttf,
+% UprightFont=*-Regular,
+% BoldFont=*-Bold
+% ]{NotoSans}
+% \newfontfamily\rmfamily[
+% Extension=.ttf,
+% UprightFont=*-Regular,
+% BoldFont=*-Bold,
+% ItalicFont=*-Italic,
+% Mapping=tex-text
+% ]{NotoSans}
+% \newfontfamily\sffamily[
+% Extension=.ttf,
+% UprightFont=*-R,
+% BoldFont=*-B,
+% ItalicFont=*-RI,
+% BoldItalicFont=*-BI,
+% Mapping=tex-text
+% ]{Montserrat}
+% \newfontfamily\ttfamily[
+% Extension=.ttf,
+% UprightFont=*-Regular,
+% BoldFont=*-Bold
+% ]{NotoSans}
+
+\renewcommand{\small}{\@setfontsize{\small}{5pt}{5pt}}
+\renewcommand{\normalsize}{\@setfontsize{\normalsize}{10pt}{10pt}}
+\renewcommand{\footnotesize}{\@setfontsize{\footnotesize}{8pt}{8pt}}
+
+\setbeamerfont{note page}{size=\small}
+\setbeamerfont{tiny structure}{family=\sffamily}
+\setbeamerfont{structure}{family=\sffamily}
+\setbeamerfont{section in toc}{family=\sffamily}
+\setbeamerfont{subsection in toc}{family=\sffamily}
+\setbeamerfont{subsubsection in toc}{family=\sffamily}
+\setbeamerfont{block body}{series=\mdseries}
+\setbeamerfont{block body example}{series=\mdseries}
+\setbeamerfont{block title alerted}{series=\bfseries}
+\setbeamerfont{abstract}{size=\normalsize}
+\setbeamerfont{title}{size=\Large}
+\setbeamerfont{subtitle}{size=\Large}
+\setbeamerfont{author}{size=\large}
+\setbeamerfont{math}{size=\tiny}
+\setbeamerfont{bibliography item}{size=\small}
+\setbeamerfont{bibliography entry author}{size=\small}
+\setbeamerfont{table}{size=\footnotesize}
+\setbeamerfont{section in head/foot}{series=\bfseries}
+\setbeamerfont{block title}{series=\bfseries, size=\small}
+\setbeamerfont{block alerted title}{series=\bfseries}
+\setbeamerfont{frametitle}{series=\bfseries,size=\normalsize}
+\setbeamerfont{caption}{size=\footnotesize}
+\setbeamerfont{caption name}{size=\footnotesize}
+
+%%
