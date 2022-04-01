@@ -24,7 +24,7 @@
   \hspace*{3mm}
   \insertsubtitle, \insertdate
   \hfill
-  \insertframenumber$\ /\ $\insertmainframenumber
+  \insertsection,\ Slide\ \insertframenumber$\ /\ $\insertmainframenumber
   \hspace*{3mm}
   \vspace*{1mm}
 }
@@ -38,7 +38,7 @@
 
 %% Itemize
 \setbeamertemplate{itemize item}{$\rightarrow$}
-
+\setbeamercolor{itemize item}{fg=black}
 
 %% Frame
 
@@ -47,17 +47,25 @@
 }
 
 
-\setbeamertemplate{frametitle}{
-  \vspace*{2mm}
-  \parindent=\insertframetitle \\
-  \vspace*{1mm}
-  \usebeamercolor[fg]{framesubtitle}
-  \footnotesize\insertframesubtitle
-}
+% \setbeamertemplate{frametitle}{
+%   \vspace*{2mm}
+%   \parindent=\insertframetitle \\
+%   \vspace*{1mm}
+%   \usebeamercolor[fg]{framesubtitle}
+%   \footnotesize\insertframesubtitle
+% }
 
 
- \setbeamersize
- {
+ \setbeamersize{
      text margin left=0.5cm,
      text margin right=0.7cm
  }
+%% no navigation symbols
+\setbeamertemplate{sidebar right}{
+}
+\setbeamertemplate{navigation symbols}{}
+
+
+\setbeamercolor{framesubtitle} {
+  fg=gray
+}
