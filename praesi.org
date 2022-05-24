@@ -1,0 +1,50 @@
+#+Title: Partial Analysis Increments and Measures of Imbalance in an LETKF Data Assimilation Systems
+#+Author: Theresa Diefenbach
+#+DATE: \today
+#+SUBTITLE: PAI and Imbalance in LETKF DA
+
+#+LATEX_HEADER: \makeatletter
+#+LATEX_HEADER: \def\input@path{{/home/t/Theresa.Diefenbach/phd/beamertemplate/}}
+#+LATEX_HEADER: \usepackage{fontspec}
+#+LATEX_HEADER: \usepackage{float}
+#+LATEX_HEADER: \setmainfont{Arial}
+#+LATEX_HEADER: \usepackage{natbib}
+#+LATEX_HEADER: \setcitestyle{round}
+#+LATEX_CLASS: beamer
+#+LaTeX_CLASS_options: [aspectratio=169,table]
+#+OPTIONS: H:2 toc:nil title:nil
+#+BEAMER_THEME: inthenew
+#+COLUMNS: %45ITEM %10BEAMER_ENV(Env) %10BEAMER_ACT(Act) %4BEAMER_COL(Col)
+#+EXCLUDE_TAGS: noexport
+#+LATEX_HEADER: \usepackage{colortbl}
+#+LATEX_HEADER: \usepackage{tabularx}
+#+LATEX_HEADER: \setbeamercovered{transparent}
+#+LATEX_HEADER: \renewcommand{\arraystretch}{1.4}
+#+LATEX_HEADER: \hypersetup{colorlinks=true,linkcolor=gray,urlcolor=cyan,citecolor=black,}
+#+LATEX_HEADER: \usepackage{diagbox}
+#+LATEX_HEADER: \usepackage{siunitx}
+#+LATEX_HEADER: \usepackage{float}
+#+LATEX_HEADER: \usepackage{hyperref}
+#+LATEX_HEADER: \usepackage{tikz}
+#+LATEX_HEADER: \usepackage{tikzscale}
+#+LATEX_HEADER: \usepackage{pgfplots}
+#+LATEX_HEADER: \pgfplotsset{compat=1.16}
+#+LATEX_HEADER: \usepgfplotslibrary{groupplots}
+#+LATEX_HEADER: \usepgfplotslibrary{fillbetween}
+#+LATEX_HEADER: \usepgfplotslibrary{external}
+#+LATEX_HEADER: \usepgfplotslibrary{dateplot}
+#+LATEX_HEADER: \usepackage{animate}
+#+LATEX_HEADER: \usepackage{ifthen}
+#+LATEX_HEADER: \definecolor{darkgreen}{RGB}{10,90,10}
+
+* Introduction
+** Introduction
+- Some bullet points
+- second bullet point
+  \pause
+- Third bullet point
+** Testframe :B_frame:
+:PROPERTIES:
+:BEAMER_OPT: bigword
+:END:
+Hi

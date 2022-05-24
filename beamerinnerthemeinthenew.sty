@@ -1,0 +1,30 @@
+%% Itemize
+\setbeamertemplate{itemize item}{$\rightarrow$}
+\setbeamercolor{itemize item}{fg=black}
+\setbeamertemplate{itemize subitem}{–}
+\setbeamercolor{itemize subitem}{fg=black}
+\setbeamertemplate{itemize/enumerate subbody begin}{\normalsize}
+
+
+
+%% Define different frametitles
+\defbeamertemplate{frametitle}{mydefault}{%
+  \insertframetitle%
+}
+
+\defbeamertemplate{frametitle}{bigword}{%
+    \begin{centering}
+    \huge
+    \color{orange}\insertframetitle%
+    \end{centering}
+}
+
+\BeforeBeginEnvironment{frame}{%
+  \setbeamertemplate{frametitle}[mydefault]%
+}
+
+\makeatletter
+\define@key{beamerframe}{bigword}[true]{%
+  \setbeamertemplate{frametitle}[bigword]%
+}
+\makeatother
