@@ -6,13 +6,22 @@
 \setbeamertemplate{itemize/enumerate subbody begin}{\normalsize}
 
 
+%% General Frame settings
+\setbeamercolor{frametitle} {
+  fg=black
+}
+
+
+
 
 %% Define different frametitles
 \defbeamertemplate{frametitle}{mydefault}{%
+  \vspace*{2mm}
   \insertframetitle%
+  \vspace*{1mm}
 }
 
-\defbeamertemplate{frametitle}{bigword}{%
+\defbeamertemplate{frametitle}{twocolumns}{%
     \begin{centering}
     \huge
     \color{orange}\insertframetitle%
@@ -24,7 +33,7 @@
 }
 
 \makeatletter
-\define@key{beamerframe}{bigword}[true]{%
-  \setbeamertemplate{frametitle}[bigword]%
+\define@key{beamerframe}{twocolumns}[true]{%
+  \setbeamertemplate{frametitle}[twocolumns]%
 }
 \makeatother

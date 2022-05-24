@@ -20,7 +20,7 @@
 #+LATEX_HEADER: \usepackage{tabularx}
 #+LATEX_HEADER: \setbeamercovered{transparent}
 #+LATEX_HEADER: \renewcommand{\arraystretch}{1.4}
-#+LATEX_HEADER: \hypersetup{colorlinks=true,linkcolor=gray,urlcolor=cyan,citecolor=black,}
+#+LATEX_HEADER: \hypersetup{colorlinks=true,linkcolor=black,urlcolor=cyan,citecolor=black,}
 #+LATEX_HEADER: \usepackage{diagbox}
 #+LATEX_HEADER: \usepackage{siunitx}
 #+LATEX_HEADER: \usepackage{float}
@@ -45,6 +45,33 @@
 - Third bullet point
 ** Testframe :B_frame:
 :PROPERTIES:
-:BEAMER_OPT: bigword
+:BEAMER_OPT: twocolumns
 :END:
-Hi
+*** Column 1 :B_column:
+:PROPERTIES:
+:BEAMER_env: column
+:BEAMER_col: 0.5
+:END:
+- column 1
+- lala
+*** Column 2 :B_column:
+:PROPERTIES:
+:BEAMER_env: column
+:BEAMER_col: 0.5
+:END:
+- Hialeah
+- hi
+** NEW test
+*** here :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.7
+:END:
+- Oneal
+- two<<
+*** there :BMCOL:
+:PROPERTIES:
+:BEAMER_col: 0.3
+:END:
+
+- Oneal
+- two<<
