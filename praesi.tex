@@ -1,4 +1,4 @@
-% Created 2022-05-24 Tue 18:20
+% Created 2022-05-24 Tue 18:34
 % Intended LaTeX compiler: pdflatex
 \documentclass[aspectratio=169,table]{beamer}
 \usepackage[utf8]{inputenc}
@@ -32,6 +32,7 @@
 \usepackage{hyperref}
 \usepackage{tikz}
 \usepackage{tikzscale}
+\usetikzlibrary{tikzmark,fit,shapes.geometric}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.16}
 \usepgfplotslibrary{groupplots}
@@ -57,8 +58,8 @@
 
 
 \section{Introduction}
-\label{sec:org21ac092}
-\begin{frame}[label={sec:org579c336}]{Introduction}
+\label{sec:org2c29402}
+\begin{frame}[label={sec:orgb081c54}]{Introduction}
 \begin{itemize}
 \item Some bullet points
 \item second bullet point
@@ -66,7 +67,7 @@
 \item Third bullet point
 \end{itemize}
 \end{frame}
-\begin{frame}[label={sec:org573197a},twocolumns]{Testframe}
+\begin{frame}[label={sec:org4c8e506},twocolumns]{Testframe}
 \begin{columns}
 \begin{column}{0.5\columnwidth}
 \begin{itemize}
@@ -82,13 +83,20 @@
 \end{column}
 \end{columns}
 \end{frame}
-\begin{frame}[label={sec:org0555aa5}]{NEW test}
+\begin{frame}[label={sec:org79b5831}]{NEW test}
 \begin{columns}
 \begin{column}{0.7\columnwidth}
 \begin{itemize}
 \item Oneal
+\end{itemize}
+\pause
+\begin{itemize}
+\item Both are mechanoreceptive: A\tikzmark{start}\(\beta\) SAI rapi\tikzmark{end}
 \item two<<
 \end{itemize}
+\begin{tikzpicture}[remember picture,overlay]
+\node<3>[draw,line width=2pt,cyan,ellipse,inner ysep=15pt,fit={(pic cs:start) (pic cs:end)}] {};
+\end{tikzpicture}
 \end{column}
 \begin{column}{0.3\columnwidth}
 \begin{itemize}

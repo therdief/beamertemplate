@@ -27,6 +27,7 @@
 #+LATEX_HEADER: \usepackage{hyperref}
 #+LATEX_HEADER: \usepackage{tikz}
 #+LATEX_HEADER: \usepackage{tikzscale}
+#+LATEX_HEADER: \usetikzlibrary{tikzmark,fit,shapes.geometric}
 #+LATEX_HEADER: \usepackage{pgfplots}
 #+LATEX_HEADER: \pgfplotsset{compat=1.16}
 #+LATEX_HEADER: \usepgfplotslibrary{groupplots}
@@ -67,7 +68,12 @@
 :BEAMER_col: 0.7
 :END:
 - Oneal
+\pause
+- Both are mechanoreceptive: A\tikzmark{start}$\beta$ SAI rapi\tikzmark{end}
 - two<<
+\begin{tikzpicture}[remember picture,overlay]
+\node<3>[draw,line width=2pt,cyan,ellipse,inner ysep=15pt,fit={(pic cs:start) (pic cs:end)}] {};
+\end{tikzpicture}
 *** there :BMCOL:
 :PROPERTIES:
 :BEAMER_col: 0.3
