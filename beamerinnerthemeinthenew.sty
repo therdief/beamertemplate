@@ -1,3 +1,4 @@
+
 %% Itemize
 \setbeamertemplate{itemize item}{$\rightarrow$}
 \setbeamercolor{itemize item}{fg=black}
@@ -7,18 +8,24 @@
 
 
 %% General Frame settings
-\setbeamercolor{frametitle} {
-  fg=black
+\setbeamercolor{frametitle}{
+  fg=lmublack,bg=lmugray
 }
 
+\setbeamercolor{caption name} {
+  fg=lmublack
+}
 
-
-
+\setbeamercolor{normal text}{fg=lmublack}
+\usebeamercolor*{normal text}
 %% Define different frametitles
 \defbeamertemplate{frametitle}{mydefault}{%
-  \vspace*{2mm}
-  \insertframetitle%
-  \vspace*{1mm}
+  \nointerlineskip
+  \begin{beamercolorbox}[sep=0.3cm,ht=1.8em,wd=\paperwidth]{frametitle}
+    \vbox{}\vskip-2ex%
+    \strut\insertframetitle\strut%
+    \vskip-0.8ex%
+  \end{beamercolorbox}
 }
 
 \defbeamertemplate{frametitle}{twocolumns}{%
@@ -28,6 +35,7 @@
     \end{centering}
 }
 
+
 \BeforeBeginEnvironment{frame}{%
   \setbeamertemplate{frametitle}[mydefault]%
 }
@@ -35,5 +43,8 @@
 \makeatletter
 \define@key{beamerframe}{twocolumns}[true]{%
   \setbeamertemplate{frametitle}[twocolumns]%
+}
+\define@key{beamerframe}{plaingrey}[true]{%
+  \setbeamercolor{background canvas}{bg=lmugray}%
 }
 \makeatother
